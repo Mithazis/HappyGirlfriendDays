@@ -75,16 +75,15 @@ noBtn.addEventListener('touchstart', (e) => {
     startGame();
 });
 
-// === BAGIAN YANG DIUBAH ===
+
 yesBtn.addEventListener('click', () => {
-    // Sembunyikan semua elemen pertanyaan
+
     container.classList.add('hidden');
     yesBtn.classList.add('hidden');
     noBtn.classList.add('hidden');
 
-    // Tampilkan div respons
+
     responseDiv.classList.remove('hidden');
 
-    // Mulai animasi ketik
     typeWriter();
 });
