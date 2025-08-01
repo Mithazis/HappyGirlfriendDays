@@ -5,7 +5,7 @@ const responseDiv = document.getElementById('response');
 const buttonGroup = document.querySelector('.button-group');
 
 const responseTextElement = document.getElementById('response-text');
-const message = `Aaaaa, aku juga kangen kamu! \nHappy Girlfriend Days❤️`; //teks ini bisa diganti
+const message = `Aaaaa, I like You too! \nHappy Girlfriend Days❤️`; //teks ini bisa diganti
 const typingSpeed = 100;
 let charIndex = 0;
 
