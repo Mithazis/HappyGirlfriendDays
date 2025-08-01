@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden; 
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+    max-width: 90%;
+}
+
+.question-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; 
+    margin-bottom: 30px;
+}
+
+#curious-gif {
+    width: 80px;
+    height: auto;
+}
+
+.question {
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    margin: 0;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap; 
+    min-height: 50px;
+}
+
+.btn {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    cursor: pointer;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, background-color 0.2s ease, top 0.3s ease-in-out, left 0.3s ease-in-out;
+    min-width: 100px;
+}
+
+#yes-btn {
+    background-color: #4CAF50;
+    order: 1;
+}
+
+#no-btn {
+    background-color: #f44336;
+    order: 2;
+}
+
+#yes-btn:hover {
+    transform: scale(1.1);
+}
+
+.hidden {
+    display: none !important;
+}
+
+#response {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+#response-gif {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#response h1 {
+    font-size: clamp(1.4rem, 4vw, 2.2rem);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+#response-text {
+    border-right: .15em solid white;
+    white-space: pre-wrap;
+    overflow: hidden;
+    min-height: 2.5rem;
+    letter-spacing: .10em;
+    animation: blinking-cursor .75s step-end infinite;
+}
+
+@keyframes blinking-cursor {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+}
